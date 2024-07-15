@@ -16,6 +16,12 @@ OBJ_LIBRARY := $(patsubst %.c, %.o, $(PROJECT_DIR)/backend.c)
 
 all: clean install tetris test gcov_report
 
+##################################################################################################
+#                                                                                                #
+# Important: to include a fsm diagram, see tetris_man.tex lines 94-95. Uncomment them as needed. #
+#                                                                                                #
+##################################################################################################
+
 install: 
 	mkdir $(PROJECT_DIR)
 	cp tetris.c $(PROJECT_DIR)/tetris.c
